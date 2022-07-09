@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/51979/Desktop/ProyectosFlutter/helmascot/app/src/main/res/layout/activity_inicio.xml" value="0.4" />
+        <entry key="..\:/Users/51979/Desktop/ProyectosFlutter/helmascot/app/src/main/res/layout/activity_main.xml" value="0.536" />
         <entry key="..\:/Users/51979/Desktop/ProyectosFlutter/helmascot/app/src/main/res/layout/activity_reporte.xml" value="0.4" />
         <entry key="..\:/Users/51979/Desktop/ProyectosFlutter/helmascot/app/src/main/res/layout/activity_resultado.xml" value="0.2595108695652174" />
+        <entry key="..\:/Users/51979/Desktop/ProyectosFlutter/helmascot/app/src/main/res/layout/mascota_item.xml" value="0.365625" />
       </map>
     </option>
   </component>

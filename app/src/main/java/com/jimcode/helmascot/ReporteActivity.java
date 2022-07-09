@@ -36,29 +36,21 @@ public class ReporteActivity extends AppCompatActivity {
         color = txinetColor.getText().toString();
         lugar = txinetLugar.getText().toString();
 
-        if ("".equals(especie)){
-            validarCampos("El campo especie es requerido", txinetEspecie);
-        }
+        if ("".equals(especie) || "".equals(raza) || "".equals(color) || "".equals(lugar)){
 
-        else if ("".equals(raza)){
-            validarCampos("El campo raza es requerido", txinetRaza);
-        }
-
-        else if ("".equals(color)){
-            validarCampos("El campo color es requerido", txinetColor);
-        }
-
-        else if ("".equals(lugar)){
-            validarCampos("El campo lugar es requerido", txinetLugar);
+            Toast.makeText(this, "Los campos son obligatorios", Toast.LENGTH_SHORT).show();
+            txinetEspecie.requestFocus();
+        }else{
+            Intent intent = new Intent(this, ResultadoActivity.class);
+            intent.putExtra("especies", especie);
+            intent.putExtra("raza", raza);
+            intent.putExtra("color", color);
+            intent.putExtra("lugar", lugar);
+            startActivity(intent);
         }
 
 
-        Intent intent = new Intent(this, ResultadoActivity.class);
-        intent.putExtra("especies", especie);
-        intent.putExtra("raza", raza);
-        intent.putExtra("color", color);
-        intent.putExtra("lugar", lugar);
-        startActivity(intent);
+
 
     }
 
